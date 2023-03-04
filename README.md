@@ -50,9 +50,9 @@ const MONGO_URI = "mongodb://localhost:27017/BECodeChallenge";
 
 Using jest and supertest, I created 3 case scenarios to validate:
 
- *Providing an id retrieves the correct Character
- *Providing a name retrieves the correct Character
- *Providing a wrong name/not in the database returns a 404 with a message saying that it was not found.
+ * Providing an id retrieves the correct Character
+ * Providing a name retrieves the correct Character
+ * Providing a wrong name/not in the database returns a 404 with a message saying that it was not found.
 
 To run this tests just run the command below
 
