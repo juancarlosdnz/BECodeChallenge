@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <title>Search Character by ID or Name with this input</title>
+    <h1>Search Character:</h1>
+    <form method="GET" action="/character">
+      <label for="idOrName">Enter Character ID or Name:</label>
+      <input type="text" id="idOrName" name="idOrName" />
+      <button type="submit">Find</button>
+    </form>
+    <% if (!character) { character = {} } %>
+    <h2>Character Info:</h2>
+    <ul>
+      <li>ID: <%= character.internalId || '' %></li>
+      <li>Name: <%= character.name || '' %></li>
+      <li>Description: <%= character.description || '' %></li>
+    </ul>
+  </body>
+</html>
